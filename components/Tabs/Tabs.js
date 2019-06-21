@@ -23,10 +23,10 @@ class TabLink {
     Array.from(this.cards).map(card => new TabCard(card));
 
     // Add a click event that invokes this.selectTab
-     this.tabElement.addEventListener('click', () => {this.selectTab(this.cards)});
+     this.tabElement.addEventListener('click', () => {this.selectTab()});
   }
 
-  selectTab(thisCards){
+  selectTab(){
 
     // Select all elements with the .tab class on them
     // const tabs = document.querySelectorAll('.tab');
