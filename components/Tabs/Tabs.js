@@ -14,8 +14,9 @@ console.log(this.tabData)
       this.cards =  document.querySelectorAll('.card') ;
     } else {
       // else if `all` is false, only select the cards with matching this.tabData values
-      this.cards =  document.querySelectorAll('.card') ;
-      //  this.cards = document.querySelector('.card[data-tab="' + this.tabData + '"]')
+      // this.cards =  document.querySelectorAll('.card') ;
+      // this.itemElement =  document.querySelector('.tabs-item[data-tab="' + this.data + '"]')
+      this.cards = document.querySelectorAll('.card[data-tab="' + this.tabData + '"]')
     }
 console.log('this.cards= ',this.cards)
     // /* <- Delete this comment block when you work on the if statement
