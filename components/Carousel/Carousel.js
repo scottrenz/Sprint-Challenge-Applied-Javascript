@@ -10,25 +10,21 @@
 
 class Carousel {
     constructor(element){
-      // assign this.element to the element DOM reference
       this.element =  element;
       this.btnData = this.element.dataset.btn
-
-      // Add a click event that invokes this.selectTab
 
        this.element.addEventListener('click', () => {this.moveImg()});
     }
   
     moveImg(){
-// console.log('this.btnData=',this.btnData)
       const arr = Array.from(imgs)
       let current = 0;
       arr.forEach(function(thing,idx) {
-        if(imgs[idx].style.display ==='flex')
+        if(imgs[idx].style.display === 'flex')
             {current = idx}
        })
-       
-       if(this.btnData === 'L') {
+
+       if(this.btnData === 'L') {   
         if (current === 0)
          {current = imgs.length - 1}
         else
@@ -48,13 +44,14 @@ class Carousel {
         else
         {imgs[idx].style = 'display: none'}
        })
-       
 
     }
 }
   let btns = document.querySelectorAll('.xbtn');
   let imgs = document.querySelectorAll('.carousel img');
+
   btns.forEach(one => new Carousel(one))
-for ( i = 0; i < (imgs.length - 1); i++)
+
+  for ( i = 0; i < (imgs.length - 1); i++)
    { imgs[i].style = 'display: none'}
-  imgs[0].style = 'display: flex'
+  imgs[5].style = 'display: flex'
