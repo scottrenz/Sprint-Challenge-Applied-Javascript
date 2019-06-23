@@ -5,11 +5,12 @@ class TabLink {
     
     // Get the `data-tab` value from this.tabElement and store it here 
     this.tabData = this.tabElement.dataset.tab
+    console.log('this.tabData=',this.tabData)
     // We need to find out if a user clicked 'all' cards or a specific category.  Follow the instructions below to accomplish this task:    
     // Check to see if this.tabData is equal to 'all'
     if(this.tabData === 'all'){
       // If `all` is true, select all cards regardless of their data attribute values
-      this.cards =  document.querySelectorAll('.card') ;
+      this.cards = document.querySelectorAll('.card') ;
     } else {
       // else if `all` is false, only select the cards with matching this.tabData values
       this.cards = document.querySelectorAll('.card[data-tab="' + this.tabData + '"]')
@@ -20,7 +21,8 @@ class TabLink {
      // Convert each this.cards element into
      // a new instance of the TabCard class.
      //  Pass in a card object to the TabCard class. 
-    Array.from(this.cards).map(card => new TabCard(card));
+      this.cards = Array.from(this.cards).map(card => new TabCard(card));
+// Array.from(this.cards).map(card => new TabCard(card));
 
     // Add a click event that invokes this.selectTab
      this.tabElement.addEventListener('click', () => {this.selectTab()});
@@ -45,8 +47,8 @@ class TabLink {
 
     // Notice we are looping through the this.cards array and invoking selectCard()
     // from the TabCard class. Just un-comment the code and study what is happening here.
-    // this.cards.forEach(card => card.selectCard());
-    this.cards.forEach(card => new TabCard(card).selectCard());
+    this.cards.forEach(card => card.selectCard());
+    // this.cards.forEach(card => new TabCard(card).selectCard());
   }
 }
 
