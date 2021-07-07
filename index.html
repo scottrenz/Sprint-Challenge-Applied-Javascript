@@ -8,7 +8,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script src="./components/Tabs/Tabs.js" async></script>
-  <!-- <script src="./components/Carousel/Carousel.js" async></script> -->
+  <script src="./components/Carousel/Carousel.js" async></script>
 </head>
 
 <body>
@@ -30,7 +30,7 @@
 
   <!-- HEADER COMPONENT -->
   <div class="header">
-    <span class="date">SMARCH 28, 2018</span>
+    <span class="date">MARCH 28, 2018</span>
     <h1>Lambda Times</h1>
     <span class="temp">98°</span>
   </div>
@@ -45,20 +45,64 @@
       <div data-tab="node" class="tab">NODE.JS</div>
       <div data-tab="jquery" class="tab">jQUERY</div>
       <div data-tab="bootstrap" class="tab">BOOTSTRAP</div>
+      <div data-tab="thisone" class="tab">THISONE</div>
+      <div data-tab="thatone" class="tab">THATONE</div>
     </div>
   </div>
 
   <!-- STRETCH GOAL: ONLY UNCOMMENT THIS WHEN YOU ARE FINISHED WITH THE MAIN OBJECTIVE -->
   <!-- CAROUSEL COMPONENT -->
-  <!-- <div class="carousel">
-    <div class="left-button"><</div>
+  <div class="carousel">
+    <div class="left-button xbtn" data-btn="L"><</div>
+    <img src="./assets/bones.jpg" />
     <img src="./assets/carousel/mountains.jpeg" />
+    <img src="./assets/fido.jpg" />
     <img src="./assets/carousel/computer.jpeg" />
+    <img src="./assets/max.jpg" />
     <img src="./assets/carousel/trees.jpeg" />
+    <img src="./assets/puppers.jpg" />
     <img src="./assets/carousel/turntable.jpeg" />
-    <div class="right-button">></div>
-  </div> -->
-
+    <img src="./assets/sir.jpg" />
+    <img src="./PuertoRico/2017-04-11 17.08.08.jpg" />
+    <img src="./PuertoRico/2017-04-11 17.50.22.jpg" />
+    <img src="./PuertoRico/2017-04-13 12.02.12.jpg" />
+    <img src="./PuertoRico/2017-04-13 12.05.33.jpg" />
+    <img src="./PuertoRico/2017-04-13 12.07.26.jpg" />
+    <img src="./PuertoRico/2017-04-13 12.12.24.jpg" />
+    <img src="./PuertoRico/2017-04-13 12.16.38.jpg" />
+    <img src="./PuertoRico/2017-04-13 12.18.46.jpg" />
+    <img src="./PuertoRico/2017-04-13 12.45.40.jpg" />
+    <img src="./PuertoRico/2017-04-13 12.50.56.jpg" />
+    <img src="./PuertoRico/2017-04-13 12.56.40.jpg" />
+    <img src="./PuertoRico/2017-04-13 12.58.37.jpg" />
+    <img src="./PuertoRico/2017-04-13 13.01.02.jpg" />
+    <img src="./PuertoRico/2017-04-13 13.02.54.jpg" />
+    <img src="./PuertoRico/2017-04-13 13.03.43.jpg" />
+    <img src="./PuertoRico/2017-04-13 13.05.40.jpg" />
+    <img src="./PuertoRico/2017-04-13 13.05.42.jpg" />
+    <img src="./PuertoRico/2017-04-13 13.06.03.jpg" />
+    <img src="./PuertoRico/2017-04-13 13.06.14.jpg" />
+    <img src="./PuertoRico/2017-04-13 13.06.27.jpg" />
+    <img src="./PuertoRico/2017-04-13 13.07.52.jpg" />
+    <img src="./PuertoRico/2017-04-13 13.15.26.jpg" />
+    <img src="./PuertoRico/2017-04-13 13.29.01.jpg" />
+    <img src="./PuertoRico/2017-04-13 13.35.03.jpg" />
+    <img src="./PuertoRico/2017-04-13 13.35.07.jpg" />
+    <img src="./PuertoRico/2017-04-13 13.40.36.jpg" />
+    <img src="./PuertoRico/2017-04-13 13.43.31.jpg" />
+    <img src="./PuertoRico/2017-04-15 16.36.45.jpg" />
+    <img src="./PuertoRico/2017-04-15 16.36.42.jpg">
+    <img src="./PuertoRico/2017-04-15 16.37.41.jpg">
+    <img src="./PuertoRico/2017-04-15 17.00.42.jpg">
+    <img src="./PuertoRico/2017-04-15 17.01.50.jpg">
+    <img src="./PuertoRico/2017-04-15 17.03.43.jpg">
+    <img src="./PuertoRico/2017-04-15 17.04.57.jpg" />
+    <img src="./PuertoRico/2017-04-15 17.08.35.jpg" />
+    <img src="./PuertoRico/2017-04-15 17.21.24.jpg" />
+    <img src="./PuertoRico/2017-04-15 17.21.41.jpg" />
+    <img src="./PuertoRico/2017-04-15 17.22.52.jpg">
+    <div class="right-button xbtn" data-btn="R">></div>
+  </div>
   <!-- CARDS COMPONENT -->
   <div class="cards-container">
 
@@ -67,7 +111,7 @@
       <div class="headline">ES8: The Next Step in the Evolution of Javascript and What it Means For Your Projects</div>
       <div class="author">
         <div class="img-container">
-          <img src="./assets/sir.jpg" />
+          <img src="." />
         </div>
         <span>By SIR RUFF'N'STUFF</span>
       </div>
@@ -127,7 +171,7 @@
       <div class="headline">Node.js in 2018: Which Framework? Express, Sails, Hapi?</div>
       <div class="author">
         <div class="img-container">
-          <img src="./assets/sir.jpg" />
+          <img src="." />
         </div>
         <span>By SIR RUFF'N'STUFF</span>
       </div>
@@ -177,7 +221,7 @@
       <div class="headline">Typescript: Ten Things you Should Know Before Building Your Next Angular Application</div>
       <div class="author">
         <div class="img-container">
-          <img src="./assets/sir.jpg" />
+          <img src="." />
         </div>
         <span>By SIR RUFF'N'STUFF</span>
       </div>
@@ -205,6 +249,39 @@
 
     <div class="card" data-tab="bootstrap">
       <div class="headline">The Hottest New Bootstrap 4 Components Every Developer Needs to Know About</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="./assets/max.jpg" />
+        </div>
+        <span>By MAX GOODBOYE</span>
+      </div>
+    </div>
+
+
+    <div class="card" data-tab="thisone">
+      <div class="headline">This One first</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="./assets/max.jpg" />
+        </div>
+        <span>By MAX GOODBOYE</span>
+      </div>
+    </div>
+
+
+    <div class="card" data-tab="thisone">
+      <div class="headline">This One second</div>
+      <div class="author">
+        <div class="img-container">
+          <img src="./assets/max.jpg" />
+        </div>
+        <span>By MAX GOODBOYE</span>
+      </div>
+    </div>
+
+
+    <div class="card" data-tab="thatone">
+      <div class="headline">That One</div>
       <div class="author">
         <div class="img-container">
           <img src="./assets/max.jpg" />
